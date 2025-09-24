@@ -1,52 +1,25 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import Header from "@/components/header";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
-  BookOpen,
-  GraduationCap,
-  Users,
-  Award,
-  Target,
-  TrendingUp,
   ArrowRight,
+  Award,
+  BookOpen,
   CheckCircle,
   Clock,
+  GraduationCap,
   Star,
-} from "lucide-react"
-import Link from "next/link"
+  Target,
+  TrendingUp,
+  Users,
+} from "lucide-react";
+import Link from "next/link";
 
 export default function EducacaoPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <BookOpen className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold text-foreground">Instituto Profissional</span>
-            </Link>
-
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/educacao" className="text-foreground font-medium">
-                Educação
-              </Link>
-              <Link href="/sobre" className="text-muted-foreground hover:text-foreground transition-colors">
-                Sobre
-              </Link>
-              <Link href="/saeb" className="text-muted-foreground hover:text-foreground transition-colors">
-                SAEB
-              </Link>
-              <Link href="/contato" className="text-muted-foreground hover:text-foreground transition-colors">
-                Contato
-              </Link>
-              <Button size="sm">Matricule-se</Button>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-muted/30">
@@ -59,8 +32,9 @@ export default function EducacaoPage() {
               Nossa Filosofia <span className="text-primary">Educacional</span>
             </h1>
             <p className="text-xl text-muted-foreground text-pretty mb-8">
-              Conheça nossa abordagem inovadora que combina teoria sólida, prática intensiva e conexão direta com o
-              mercado de trabalho para formar profissionais de excelência.
+              Conheça nossa abordagem inovadora que combina teoria sólida,
+              prática intensiva e conexão direta com o mercado de trabalho para
+              formar profissionais de excelência.
             </p>
           </div>
         </div>
@@ -71,11 +45,15 @@ export default function EducacaoPage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Metodologia Inovadora</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Metodologia Inovadora
+              </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Nossa metodologia é baseada em três pilares fundamentais: aprendizado prático, teoria aplicada e
-                desenvolvimento de competências socioemocionais. Acreditamos que a educação profissional deve preparar o
-                aluno para os desafios reais do mercado.
+                Nossa metodologia é baseada em três pilares fundamentais:
+                aprendizado prático, teoria aplicada e desenvolvimento de
+                competências socioemocionais. Acreditamos que a educação
+                profissional deve preparar o aluno para os desafios reais do
+                mercado.
               </p>
 
               <div className="space-y-6">
@@ -84,10 +62,13 @@ export default function EducacaoPage() {
                     <Target className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2">Aprendizado Baseado em Projetos</h3>
+                    <h3 className="font-semibold mb-2">
+                      Aprendizado Baseado em Projetos
+                    </h3>
                     <p className="text-muted-foreground">
-                      Os alunos trabalham em projetos reais desde o primeiro dia, aplicando imediatamente os
-                      conhecimentos adquiridos em situações práticas.
+                      Os alunos trabalham em projetos reais desde o primeiro
+                      dia, aplicando imediatamente os conhecimentos adquiridos
+                      em situações práticas.
                     </p>
                   </div>
                 </div>
@@ -99,7 +80,8 @@ export default function EducacaoPage() {
                   <div>
                     <h3 className="font-semibold mb-2">Turmas Reduzidas</h3>
                     <p className="text-muted-foreground">
-                      Mantemos turmas pequenas para garantir atenção individualizada e acompanhamento personalizado do
+                      Mantemos turmas pequenas para garantir atenção
+                      individualizada e acompanhamento personalizado do
                       desenvolvimento de cada aluno.
                     </p>
                   </div>
@@ -112,8 +94,8 @@ export default function EducacaoPage() {
                   <div>
                     <h3 className="font-semibold mb-2">Avaliação Contínua</h3>
                     <p className="text-muted-foreground">
-                      Sistema de avaliação contínua que acompanha o progresso do aluno e identifica pontos de melhoria
-                      em tempo real.
+                      Sistema de avaliação contínua que acompanha o progresso do
+                      aluno e identifica pontos de melhoria em tempo real.
                     </p>
                   </div>
                 </div>
@@ -135,10 +117,13 @@ export default function EducacaoPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Níveis de Ensino</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Níveis de Ensino
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Oferecemos educação completa desde o ensino fundamental até cursos profissionalizantes, preparando nossos
-              alunos para o futuro com excelência acadêmica.
+              Oferecemos educação completa desde o ensino fundamental até cursos
+              profissionalizantes, preparando nossos alunos para o futuro com
+              excelência acadêmica.
             </p>
           </div>
 
@@ -157,8 +142,9 @@ export default function EducacaoPage() {
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Nossa proposta para o ensino fundamental 2 combina o currículo tradicional com metodologias
-                  inovadoras, preparando os alunos para os desafios do ensino médio e desenvolvendo competências
+                  Nossa proposta para o ensino fundamental 2 combina o currículo
+                  tradicional com metodologias inovadoras, preparando os alunos
+                  para os desafios do ensino médio e desenvolvendo competências
                   essenciais para o século XXI.
                 </p>
 
@@ -168,7 +154,8 @@ export default function EducacaoPage() {
                     <div>
                       <h4 className="font-semibold">Metodologia STEAM</h4>
                       <p className="text-sm text-muted-foreground">
-                        Integração de Ciências, Tecnologia, Engenharia, Artes e Matemática
+                        Integração de Ciências, Tecnologia, Engenharia, Artes e
+                        Matemática
                       </p>
                     </div>
                   </div>
@@ -176,9 +163,12 @@ export default function EducacaoPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold">Projetos Interdisciplinares</h4>
+                      <h4 className="font-semibold">
+                        Projetos Interdisciplinares
+                      </h4>
                       <p className="text-sm text-muted-foreground">
-                        Conexão entre diferentes áreas do conhecimento através de projetos práticos
+                        Conexão entre diferentes áreas do conhecimento através
+                        de projetos práticos
                       </p>
                     </div>
                   </div>
@@ -188,7 +178,8 @@ export default function EducacaoPage() {
                     <div>
                       <h4 className="font-semibold">Tecnologia Educacional</h4>
                       <p className="text-sm text-muted-foreground">
-                        Uso de ferramentas digitais para potencializar o aprendizado
+                        Uso de ferramentas digitais para potencializar o
+                        aprendizado
                       </p>
                     </div>
                   </div>
@@ -196,16 +187,21 @@ export default function EducacaoPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold">Desenvolvimento Socioemocional</h4>
+                      <h4 className="font-semibold">
+                        Desenvolvimento Socioemocional
+                      </h4>
                       <p className="text-sm text-muted-foreground">
-                        Foco no desenvolvimento de habilidades sociais e emocionais
+                        Foco no desenvolvimento de habilidades sociais e
+                        emocionais
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-muted/50 rounded-lg p-4">
-                  <h4 className="font-semibold mb-2">Principais Disciplinas:</h4>
+                  <h4 className="font-semibold mb-2">
+                    Principais Disciplinas:
+                  </h4>
                   <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
                     <span>• Língua Portuguesa</span>
                     <span>• Matemática</span>
@@ -234,8 +230,10 @@ export default function EducacaoPage() {
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Nosso ensino médio prepara os estudantes para o ENEM, vestibulares e para o mercado de trabalho,
-                  oferecendo uma formação sólida e diversificada com foco no desenvolvimento integral do aluno.
+                  Nosso ensino médio prepara os estudantes para o ENEM,
+                  vestibulares e para o mercado de trabalho, oferecendo uma
+                  formação sólida e diversificada com foco no desenvolvimento
+                  integral do aluno.
                 </p>
 
                 <div className="space-y-4 mb-6">
@@ -244,7 +242,8 @@ export default function EducacaoPage() {
                     <div>
                       <h4 className="font-semibold">Preparação para ENEM</h4>
                       <p className="text-sm text-muted-foreground">
-                        Simulados, redação e revisões intensivas para o exame nacional
+                        Simulados, redação e revisões intensivas para o exame
+                        nacional
                       </p>
                     </div>
                   </div>
@@ -254,7 +253,8 @@ export default function EducacaoPage() {
                     <div>
                       <h4 className="font-semibold">Itinerários Formativos</h4>
                       <p className="text-sm text-muted-foreground">
-                        Escolha de áreas de aprofundamento conforme interesse do aluno
+                        Escolha de áreas de aprofundamento conforme interesse do
+                        aluno
                       </p>
                     </div>
                   </div>
@@ -264,7 +264,8 @@ export default function EducacaoPage() {
                     <div>
                       <h4 className="font-semibold">Orientação Vocacional</h4>
                       <p className="text-sm text-muted-foreground">
-                        Apoio na escolha da carreira e planejamento do futuro acadêmico
+                        Apoio na escolha da carreira e planejamento do futuro
+                        acadêmico
                       </p>
                     </div>
                   </div>
@@ -274,7 +275,8 @@ export default function EducacaoPage() {
                     <div>
                       <h4 className="font-semibold">Projeto de Vida</h4>
                       <p className="text-sm text-muted-foreground">
-                        Desenvolvimento de competências para o planejamento pessoal e profissional
+                        Desenvolvimento de competências para o planejamento
+                        pessoal e profissional
                       </p>
                     </div>
                   </div>
@@ -296,10 +298,14 @@ export default function EducacaoPage() {
           {/* Transition Section */}
           <div className="mt-16 text-center">
             <div className="bg-primary/5 rounded-lg p-8 max-w-4xl mx-auto">
-              <h3 className="text-2xl font-bold mb-4">Transição para Cursos Profissionalizantes</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                Transição para Cursos Profissionalizantes
+              </h3>
               <p className="text-muted-foreground mb-6">
-                Após concluir o ensino médio, nossos alunos têm acesso direto aos nossos cursos técnicos e
-                profissionalizantes, com metodologia integrada e aproveitamento de conhecimentos adquiridos.
+                Após concluir o ensino médio, nossos alunos têm acesso direto
+                aos nossos cursos técnicos e profissionalizantes, com
+                metodologia integrada e aproveitamento de conhecimentos
+                adquiridos.
               </p>
               <Button className="bg-primary hover:bg-primary/90">
                 Conhecer Cursos Profissionalizantes
@@ -314,10 +320,12 @@ export default function EducacaoPage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Áreas de Formação</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Áreas de Formação
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Oferecemos cursos em diversas áreas, sempre alinhados com as demandas do mercado e as tendências
-              tecnológicas mais atuais.
+              Oferecemos cursos em diversas áreas, sempre alinhados com as
+              demandas do mercado e as tendências tecnológicas mais atuais.
             </p>
           </div>
 
@@ -327,9 +335,12 @@ export default function EducacaoPage() {
                 <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4">
                   <BookOpen className="w-6 h-6 text-blue-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Tecnologia da Informação</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  Tecnologia da Informação
+                </h3>
                 <p className="text-muted-foreground mb-4">
-                  Desenvolvimento web, mobile, análise de sistemas e segurança da informação.
+                  Desenvolvimento web, mobile, análise de sistemas e segurança
+                  da informação.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
@@ -353,9 +364,12 @@ export default function EducacaoPage() {
                 <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center mb-4">
                   <GraduationCap className="w-6 h-6 text-green-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Design e Criatividade</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  Design e Criatividade
+                </h3>
                 <p className="text-muted-foreground mb-4">
-                  Design gráfico, UI/UX, marketing visual e produção audiovisual.
+                  Design gráfico, UI/UX, marketing visual e produção
+                  audiovisual.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
@@ -379,9 +393,12 @@ export default function EducacaoPage() {
                 <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4">
                   <TrendingUp className="w-6 h-6 text-purple-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Marketing e Negócios</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  Marketing e Negócios
+                </h3>
                 <p className="text-muted-foreground mb-4">
-                  Marketing digital, e-commerce, gestão empresarial e empreendedorismo.
+                  Marketing digital, e-commerce, gestão empresarial e
+                  empreendedorismo.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
@@ -405,9 +422,12 @@ export default function EducacaoPage() {
                 <div className="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
                   <Award className="w-6 h-6 text-orange-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Saúde e Bem-estar</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  Saúde e Bem-estar
+                </h3>
                 <p className="text-muted-foreground mb-4">
-                  Técnico em enfermagem, cuidados com idosos e primeiros socorros.
+                  Técnico em enfermagem, cuidados com idosos e primeiros
+                  socorros.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
@@ -431,9 +451,12 @@ export default function EducacaoPage() {
                 <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
                   <Users className="w-6 h-6 text-red-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Gestão e Administração</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  Gestão e Administração
+                </h3>
                 <p className="text-muted-foreground mb-4">
-                  Administração empresarial, recursos humanos e gestão financeira.
+                  Administração empresarial, recursos humanos e gestão
+                  financeira.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
@@ -457,9 +480,12 @@ export default function EducacaoPage() {
                 <div className="w-12 h-12 bg-teal-500/10 rounded-lg flex items-center justify-center mb-4">
                   <Target className="w-6 h-6 text-teal-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Técnico Industrial</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  Técnico Industrial
+                </h3>
                 <p className="text-muted-foreground mb-4">
-                  Mecânica automotiva, eletrônica industrial e manutenção predial.
+                  Mecânica automotiva, eletrônica industrial e manutenção
+                  predial.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
@@ -485,10 +511,12 @@ export default function EducacaoPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Processo de Aprendizagem</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Processo de Aprendizagem
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Nossa metodologia é estruturada em etapas que garantem o desenvolvimento progressivo e consistente de cada
-              aluno.
+              Nossa metodologia é estruturada em etapas que garantem o
+              desenvolvimento progressivo e consistente de cada aluno.
             </p>
           </div>
 
@@ -497,9 +525,12 @@ export default function EducacaoPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary">1</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Diagnóstico Inicial</h3>
+              <h3 className="text-xl font-semibold mb-3">
+                Diagnóstico Inicial
+              </h3>
               <p className="text-muted-foreground">
-                Avaliamos o conhecimento prévio e identificamos as necessidades específicas de cada aluno.
+                Avaliamos o conhecimento prévio e identificamos as necessidades
+                específicas de cada aluno.
               </p>
             </div>
 
@@ -507,9 +538,12 @@ export default function EducacaoPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-primary">2</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Fundamentação Teórica</h3>
+              <h3 className="text-xl font-semibold mb-3">
+                Fundamentação Teórica
+              </h3>
               <p className="text-muted-foreground">
-                Construção sólida dos conceitos fundamentais através de aulas dinâmicas e interativas.
+                Construção sólida dos conceitos fundamentais através de aulas
+                dinâmicas e interativas.
               </p>
             </div>
 
@@ -519,7 +553,8 @@ export default function EducacaoPage() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Prática Intensiva</h3>
               <p className="text-muted-foreground">
-                Aplicação prática dos conhecimentos através de projetos reais e simulações profissionais.
+                Aplicação prática dos conhecimentos através de projetos reais e
+                simulações profissionais.
               </p>
             </div>
 
@@ -529,7 +564,8 @@ export default function EducacaoPage() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Certificação</h3>
               <p className="text-muted-foreground">
-                Avaliação final e certificação reconhecida pelo mercado e órgãos competentes.
+                Avaliação final e certificação reconhecida pelo mercado e órgãos
+                competentes.
               </p>
             </div>
           </div>
@@ -540,8 +576,12 @@ export default function EducacaoPage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Diferenciais da Nossa Educação</h2>
-            <p className="text-xl text-muted-foreground">O que nos torna únicos na formação profissional</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Diferenciais da Nossa Educação
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              O que nos torna únicos na formação profissional
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -552,7 +592,8 @@ export default function EducacaoPage() {
               <div>
                 <h3 className="font-semibold mb-2">Horários Flexíveis</h3>
                 <p className="text-muted-foreground">
-                  Turmas nos períodos manhã, tarde e noite para se adequar à sua rotina.
+                  Turmas nos períodos manhã, tarde e noite para se adequar à sua
+                  rotina.
                 </p>
               </div>
             </div>
@@ -562,9 +603,12 @@ export default function EducacaoPage() {
                 <Star className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Professores Especialistas</h3>
+                <h3 className="font-semibold mb-2">
+                  Professores Especialistas
+                </h3>
                 <p className="text-muted-foreground">
-                  Profissionais atuantes no mercado com vasta experiência prática.
+                  Profissionais atuantes no mercado com vasta experiência
+                  prática.
                 </p>
               </div>
             </div>
@@ -575,7 +619,9 @@ export default function EducacaoPage() {
               </div>
               <div>
                 <h3 className="font-semibold mb-2">Certificação Reconhecida</h3>
-                <p className="text-muted-foreground">Diplomas e certificados reconhecidos pelo MEC e pelo mercado.</p>
+                <p className="text-muted-foreground">
+                  Diplomas e certificados reconhecidos pelo MEC e pelo mercado.
+                </p>
               </div>
             </div>
 
@@ -586,7 +632,8 @@ export default function EducacaoPage() {
               <div>
                 <h3 className="font-semibold mb-2">Suporte ao Aluno</h3>
                 <p className="text-muted-foreground">
-                  Acompanhamento pedagógico e suporte técnico durante todo o curso.
+                  Acompanhamento pedagógico e suporte técnico durante todo o
+                  curso.
                 </p>
               </div>
             </div>
@@ -598,7 +645,8 @@ export default function EducacaoPage() {
               <div>
                 <h3 className="font-semibold mb-2">Conexão com o Mercado</h3>
                 <p className="text-muted-foreground">
-                  Parcerias com empresas para estágios e oportunidades de emprego.
+                  Parcerias com empresas para estágios e oportunidades de
+                  emprego.
                 </p>
               </div>
             </div>
@@ -610,7 +658,8 @@ export default function EducacaoPage() {
               <div>
                 <h3 className="font-semibold mb-2">Material Atualizado</h3>
                 <p className="text-muted-foreground">
-                  Conteúdo sempre atualizado com as últimas tendências e tecnologias.
+                  Conteúdo sempre atualizado com as últimas tendências e
+                  tecnologias.
                 </p>
               </div>
             </div>
@@ -621,10 +670,12 @@ export default function EducacaoPage() {
       {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Transforme sua Carreira com Nossa Educação</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Transforme sua Carreira com Nossa Educação
+          </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Junte-se a milhares de profissionais que já transformaram suas vidas através da nossa metodologia de ensino
-            inovadora e eficaz.
+            Junte-se a milhares de profissionais que já transformaram suas vidas
+            através da nossa metodologia de ensino inovadora e eficaz.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8">
@@ -651,10 +702,13 @@ export default function EducacaoPage() {
                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                   <BookOpen className="w-5 h-5 text-primary-foreground" />
                 </div>
-                <span className="text-lg font-bold">Instituto Profissional</span>
+                <span className="text-lg font-bold">
+                  Instituto Profissional
+                </span>
               </div>
               <p className="text-muted-foreground">
-                Transformando vidas através da educação profissional de qualidade.
+                Transformando vidas através da educação profissional de
+                qualidade.
               </p>
             </div>
 
@@ -662,22 +716,34 @@ export default function EducacaoPage() {
               <h4 className="font-semibold mb-4">Páginas</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
-                  <Link href="/educacao" className="hover:text-foreground transition-colors">
+                  <Link
+                    href="/educacao"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Educação
                   </Link>
                 </li>
                 <li>
-                  <Link href="/sobre" className="hover:text-foreground transition-colors">
+                  <Link
+                    href="/sobre"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Sobre
                   </Link>
                 </li>
                 <li>
-                  <Link href="/saeb" className="hover:text-foreground transition-colors">
+                  <Link
+                    href="/saeb"
+                    className="hover:text-foreground transition-colors"
+                  >
                     SAEB
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contato" className="hover:text-foreground transition-colors">
+                  <Link
+                    href="/contato"
+                    className="hover:text-foreground transition-colors"
+                  >
                     Contato
                   </Link>
                 </li>
@@ -709,10 +775,13 @@ export default function EducacaoPage() {
           </div>
 
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2025 Instituto Profissional Avançado. Todos os direitos reservados.</p>
+            <p>
+              &copy; 2025 Instituto Profissional Avançado. Todos os direitos
+              reservados.
+            </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }

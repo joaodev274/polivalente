@@ -1,5 +1,6 @@
 "use client";
 
+import Header from "@/components/header";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -11,11 +12,9 @@ import {
   Cpu,
   Mail,
   MapPin,
-  Menu,
   Microscope,
   Phone,
   Star,
-  Target,
   Users,
 } from "lucide-react";
 import Link from "next/link";
@@ -23,60 +22,7 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <BookOpen className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold text-foreground">
-                Polivalente
-              </span>
-            </div>
-
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link
-                href="/educacao"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Educação
-              </Link>
-              <Link
-                href="/sobre"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Sobre
-              </Link>
-              <Link
-                href="/saeb"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                SAEB
-              </Link>
-              <Link
-                href="/contato"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Contato
-              </Link>
-              <Button
-                size="sm"
-                onClick={() => {
-                  window.location.href = "https://wa.me/32999312345";
-                }}
-              >
-                Matricule-se
-              </Button>
-            </nav>
-
-            <Button variant="ghost" size="sm" className="md:hidden">
-              <Menu className="w-5 h-5" />
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative py</a>-24 md:py-32 overflow-hidden">
